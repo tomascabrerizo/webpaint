@@ -10,7 +10,7 @@ const ctx = canvas.getContext("2d");
 
 const WINDOW_WIDTH = 800;
 const WINDOW_HEIGHT = 600;
-const BACKGROUND_COLOR = "grey";
+const BACKGROUND_COLOR = "white";
 const COMPONENT_SIZE = 4;
 
 let backbuffer = [WINDOW_WIDTH * WINDOW_HEIGHT];
@@ -44,7 +44,6 @@ blue.addEventListener("click", (e) => {
 clear_button.addEventListener("click", (e) => {
   clear_backbuffer(backbuffer, 0xffffffff);
   draw_wierd_gradient(backbuffer, 0x444444ff);
-  console.log("clear");
 });
 bush_size.addEventListener("change", (e) => {
   brush = parseInt(document.getElementById("bushSize").value);
