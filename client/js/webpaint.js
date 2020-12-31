@@ -10,7 +10,7 @@ const ctx = canvas.getContext("2d");
 
 const WINDOW_WIDTH = 800;
 const WINDOW_HEIGHT = 600;
-const BACKGROUND_COLOR = "white";
+const BACKGROUND_COLOR = 0xaaaaaaff;
 const COMPONENT_SIZE = 4;
 
 let backbuffer = [WINDOW_WIDTH * WINDOW_HEIGHT];
@@ -28,7 +28,7 @@ let mouse_x = 0;
 let mouse_y = 0;
 let is_click_down = false;
 
-clear_backbuffer(backbuffer, 0xffffffff);
+clear_backbuffer(backbuffer, BACKGROUND_COLOR);
 draw_wierd_gradient(backbuffer, 0x444444ff);
 
 red.addEventListener("click", (e) => {
@@ -42,7 +42,7 @@ blue.addEventListener("click", (e) => {
 });
 
 clear_button.addEventListener("click", (e) => {
-  clear_backbuffer(backbuffer, 0xffffffff);
+  clear_backbuffer(backbuffer, BACKGROUND_COLOR);
   draw_wierd_gradient(backbuffer, 0x444444ff);
 });
 bush_size.addEventListener("change", (e) => {
