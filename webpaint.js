@@ -127,6 +127,7 @@ function draw_line(x0, y0, x1, y1, color, backbuffer) {
 }
 
 function draw_pixel(x, y, color, backbuffer) {
+  if (x < 0 || x >= WINDOW_WIDTH || y < 0 || y >= WINDOW_HEIGHT) return;
   backbuffer[y * WINDOW_WIDTH + x] = color;
 }
 
