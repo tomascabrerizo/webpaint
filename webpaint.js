@@ -10,7 +10,7 @@ const ctx = canvas.getContext("2d");
 
 const WINDOW_WIDTH = 800;
 const WINDOW_HEIGHT = 600;
-const BACKGROUND_COLOR = 0xaaaaaaff;
+const BACKGROUND_COLOR = 0xfff6bdff;
 const COMPONENT_SIZE = 4;
 
 let backbuffer = [WINDOW_WIDTH * WINDOW_HEIGHT];
